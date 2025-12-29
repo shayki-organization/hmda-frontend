@@ -3,6 +3,8 @@ name: Unit and E2E tests
 on:
   pull_request:
 
+  schedule:
+    - cron: "0 0 * * *"
 run-name: "Unit tests and unauthenticated E2E tests: branch ${{ github.head_ref }} by @${{ github.actor }}"
 
 jobs:
